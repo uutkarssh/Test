@@ -690,3 +690,19 @@ footer{background:var(--charcoal);padding:80px 0 40px;position:relative;overflow
     font-size: 9px;
   }
 }
+/* Performance optimization for mobile */
+@media (max-width: 768px) {
+  .hero-orb {
+    filter: blur(20px) !important;
+    animation: none !important;
+  }
+  .hero-badge-dot {
+    animation: none !important;
+  }
+  .hero-scroll-line {
+    animation: none !important;
+  }
+  .marquee-track {
+    animation-duration: 40s !important;
+  }
+}
